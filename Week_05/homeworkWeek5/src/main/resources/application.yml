@@ -1,0 +1,16 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: qwe!23
+    hikari:
+      maximumPoolSize: 20
+      minimumIdle: 10
+      idleTimeout: 600000
+      connectionTimeout: 30000
+      maxLifetime: 1800000
+
+server:
+  port: 8083

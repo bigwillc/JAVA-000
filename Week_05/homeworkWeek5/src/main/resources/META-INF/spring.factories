@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.example.homeworkWeek5.module.Teacher,\
+  com.example.homeworkWeek5.module.Student,\
+  com.example.homeworkWeek5.module.School,\
+  com.example.homeworkWeek5.module.Klass
