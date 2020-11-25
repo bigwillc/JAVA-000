@@ -1,4 +1,4 @@
-##订单表
+## 订单表
 
 DROP TABLE IF EXISTS `t_order`;
 CREATE TABLE `t_order`  (
@@ -15,7 +15,7 @@ CREATE TABLE `t_order`  (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '订单表' ROW_FORMAT = Dynamic;
 
-##订单商品表
+## 订单商品表
 
 DROP TABLE IF EXISTS `t_order_product`;
 CREATE TABLE `t_order_product`  (
@@ -34,7 +34,7 @@ CREATE TABLE `t_order_product`  (
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '订单商品表' ROW_FORMAT = Dynamic;
 
 
-##商品表
+## 商品表
 
 DROP TABLE IF EXISTS `t_product`;
 CREATE TABLE `t_product`  (
@@ -46,7 +46,7 @@ CREATE TABLE `t_product`  (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '商品主表 可增加字段进行适当冗余' ROW_FORMAT = Dynamic;
 
-##商品分类表
+## 商品分类表
 
 DROP TABLE IF EXISTS `t_product_category`;
 CREATE TABLE `t_product_category`  (
@@ -61,7 +61,7 @@ CREATE TABLE `t_product_category`  (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '商品分类表' ROW_FORMAT = Dynamic;
 
-##用户表
+## 用户表
 
 DROP TABLE IF EXISTS `t_user_member`;
 CREATE TABLE `t_user_member`  (
