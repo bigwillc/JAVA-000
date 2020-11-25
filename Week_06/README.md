@@ -1,5 +1,5 @@
 ## 订单表
-
+```
 DROP TABLE IF EXISTS `t_order`;
 CREATE TABLE `t_order`  (
   `id` int(11) NOT NULL COMMENT '订单id',
@@ -14,9 +14,9 @@ CREATE TABLE `t_order`  (
   `update_time` int(13) NOT NULL COMMENT '修改时间 此处应该有一张 订单状态更改表 暂时不添加',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '订单表' ROW_FORMAT = Dynamic;
-
+```
 ## 订单商品表
-
+```
 DROP TABLE IF EXISTS `t_order_product`;
 CREATE TABLE `t_order_product`  (
   `id` int(11) NOT NULL COMMENT '订单商品ID',
@@ -32,10 +32,10 @@ CREATE TABLE `t_order_product`  (
   `update_time` int(13) NOT NULL COMMENT '修改时间',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '订单商品表' ROW_FORMAT = Dynamic;
-
+```
 
 ## 商品表
-
+```
 DROP TABLE IF EXISTS `t_product`;
 CREATE TABLE `t_product`  (
   `id` int(11) NOT NULL COMMENT '商品ID',
@@ -45,9 +45,9 @@ CREATE TABLE `t_product`  (
   `product_brand_id` int(11) NOT NULL COMMENT '商品对应卖家ID',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '商品主表 可增加字段进行适当冗余' ROW_FORMAT = Dynamic;
-
+```
 ## 商品分类表
-
+```
 DROP TABLE IF EXISTS `t_product_category`;
 CREATE TABLE `t_product_category`  (
   `id` int(11) NOT NULL COMMENT '商品分类ID',
@@ -60,9 +60,9 @@ CREATE TABLE `t_product_category`  (
   `update_time` bigint(13) NOT NULL COMMENT '修改时间',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '商品分类表' ROW_FORMAT = Dynamic;
-
+```
 ## 用户表
-
+```
 DROP TABLE IF EXISTS `t_user_member`;
 CREATE TABLE `t_user_member`  (
   `id` int(11) NOT NULL COMMENT '用户id',
@@ -74,4 +74,4 @@ CREATE TABLE `t_user_member`  (
   `update_time` int(13) NOT NULL COMMENT '修改时间',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '用户表' ROW_FORMAT = Dynamic;
-
+```
